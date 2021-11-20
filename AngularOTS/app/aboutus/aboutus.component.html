@@ -1,0 +1,16 @@
+
+
+<ul *ngFor="let stu of students">
+    <li>
+      <a
+      routerLink="/allstu"
+      routerLinkActive="active"
+      class="list-group-item list-group-item-action list-group-item-primary"
+    >
+      <span
+        >{{ stu.st_id }}--{{ stu.st_fname }}--{{ stu.st_email }}--{{ stu.st_password }}--
+        {{ stu.st_gender }}</span
+      >
+    </a> 
+   
+  </ul>
