@@ -1,0 +1,67 @@
+<a
+routerLink="/admin-com"
+ routerLinkActive="active">
+ <button class="shadow p-3 mb-5 bg-body rounded">go back to admin panel</button>
+</a>
+
+<form action="action_page">
+    <div class="container">
+      <h1>Add Quiz Details </h1>
+     
+      <label for="psw"><b>Quiz id</b></label>
+      <input type="number"
+       placeholder="Quiz ID" 
+       name="psw" 
+       id="psw" 
+       [(ngModel)]="quizData.qid"
+       required>
+
+
+
+      <hr>
+      <label for="email"><b>Title</b></label>
+      <input type="text" 
+      placeholder="Title" 
+      name="email" id="email" 
+      [(ngModel)]="quizData.title"
+      required>
+
+      <label for="psw"><b>Subject Id</b></label>
+      <input type="number"
+       placeholder="Enter Subject Id" 
+       name="psw" id="psw"
+       [(ngModel)]="quizData.subject.subject_id"
+        
+        required>
+
+      
+
+          <label for="psw"><b>Maximum Marks</b></label>
+      <input type="number"
+       placeholder="total marks" 
+       name="psw" id="psw" 
+       [(ngModel)]="quizData.maxMarks"
+       required>
+
+      <label for="psw"><b>Number of Questions</b></label>
+      <input type="number" 
+      placeholder="total no. of questions" 
+      name="psw"
+       id="psw"
+       [(ngModel)]="quizData.numberOfQuestions"
+       required>
+
+      <label for="psw-repeat"><b>Enter date: </b></label>
+      <input  type="date"
+      onload="getDate()"
+       placeholder="Enter date " 
+      name="psw-repeat"
+       id="psw-repeat" 
+       [(ngModel)]="quizData.test_date"
+      required>
+      
+      <hr>
+      
+      <button type="submit" (click)="addQuiz()" class="registerbtn">Add Quiz</button>
+    </div>
+  </form>

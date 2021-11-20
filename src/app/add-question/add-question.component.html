@@ -1,0 +1,112 @@
+<a
+routerLink="/admin-com"
+ routerLinkActive="active">
+ <button class="shadow p-3 mb-5 bg-body rounded">go back to admin panel</button>
+</a>
+
+<a href="loginpage">Login Here</a>
+
+<div class="container">
+
+    <div class="form-group">
+        <label for="txtempname">Question Id</label>
+        <input
+          type="number"
+          class="form-control"
+          id="txtempname"
+          [(ngModel)]="questionData.question_id"
+          placeholder="Enter ques id"
+          
+        />
+      </div>
+
+
+
+
+
+  <div class="form-group">
+    <label for="txtstufname">Question description</label>
+    <input
+      type="text"
+      class="form-control"
+      id="txtempname"
+      [(ngModel)]="questionData.qdescription"
+      placeholder="Enter Question"
+    />
+  </div>
+
+
+  <div class="form-group">
+    <label for="txtstulname">Option 1</label>
+    <input
+      type="text"
+      class="form-control"
+      id="txtempname"
+      [(ngModel)]="questionData.op1"
+      placeholder="option 1"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="txtstulname">Option 2</label>
+    <input
+      type="text"
+      class="form-control"
+      id="txtempname"
+      [(ngModel)]="questionData.op2"
+      placeholder="option 2"
+    />
+  </div>
+  <div class="form-group">
+    <label for="txtstulname">Option 3</label>
+    <input
+      type="text"
+      class="form-control"
+      id="txtempname"
+      [(ngModel)]="questionData.op3"
+      placeholder="option 3"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="txtstulname">Option 4</label>
+    <input
+      type="text"
+      class="form-control"
+      id="txtempname"
+      [(ngModel)]="questionData.op4"
+      placeholder="option 4"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="txtstulname">Answer</label>
+    <input
+      type="text"
+      class="form-control"
+      id="txtempname"
+      [(ngModel)]="questionData.answer"
+      placeholder="correct answer"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="txtstulname">(FK)quiz ID</label>
+    <input
+      type="text"
+      class="form-control"
+      id="txtempname"
+      [(ngModel)]="questionData.quiz.qid"
+      placeholder="Quiz ID"
+    />
+  </div>
+
+  </div>
+  <div class="form-group">
+      
+    <button (click)="addQuestion()" class="btn btn-primary">
+      add Question
+    </button>
+  </div>
+
+
